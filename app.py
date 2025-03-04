@@ -25,7 +25,7 @@ def generate_mcqs(topic, num_questions):
         return f"An error occurred: {e}"
 
 def main():
-    st.images('logo.webp')
+    st.image('logo.webp')
     st.title("MCQ Generator with Gemini")
 
     topic = st.text_input("Enter the topic for MCQs:")
