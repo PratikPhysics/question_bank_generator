@@ -41,7 +41,7 @@ def main():
             st.warning("Please enter both topic and number of questions.")
 
 with st.sidebar:
-    st.write('The create MCQs and move on!')
+    st.write('Just create MCQs and eat well!')
     st.image('cutie-cat.gif')
 
 if __name__ == "__main__":
