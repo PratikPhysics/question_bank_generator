@@ -11,10 +11,12 @@ def generate_mcqs(topic, num_questions):
 
     Format:
     Question: [Question text]
+    
     a) [Option a]
     b) [Option b]
     c) [Option c]
     d) [Option d]
+    
     Answer: [Correct option]
     """
 
