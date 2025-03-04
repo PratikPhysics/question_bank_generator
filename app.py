@@ -43,6 +43,11 @@ def main():
 with st.sidebar:
     st.write('Just create MCQs and eat well!')
     st.image('cutie-cat.gif')
+    st.write('My Linkenin : www.linkedin.com/in/pratik-ramteke-21573317a ')
+    st.write('My GitHub : https://github.com/PratikPhysics')
+    st.write('Just call me : +91 7588399515')
+    
+
 
 if __name__ == "__main__":
     main()
