@@ -28,6 +28,7 @@ def main():
     st.image('logo.webp')
     st.title("MCQ Generator with Gemini")
 
+
     topic = st.text_input("Enter the topic for MCQs:")
     num_questions = st.number_input("Enter the number of questions:", min_value=1, step=1)
 
@@ -38,6 +39,10 @@ def main():
                 st.markdown(mcqs)
         else:
             st.warning("Please enter both topic and number of questions.")
+
+with st.sidebar:
+    st.write('The create MCQs and move on!')
+    st.image('cutie-cat.gif')
 
 if __name__ == "__main__":
     main()
