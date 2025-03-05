@@ -28,7 +28,7 @@ def generate_mcqs(topic, num_questions):
 
 def main():
     st.image('logo.webp')
-    st.title("MCQ Generator with Cloudblitz 😎❤️")
+    st.title("MCQ Generator with Gemini 😎❤️")
 
 
     topic = st.text_input("Enter the topic for MCQs:")
