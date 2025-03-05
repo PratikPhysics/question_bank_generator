@@ -6,7 +6,7 @@ genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 def generate_mcqs(topic, num_questions):
     model = genai.GenerativeModel('gemini-2.0-flash')
-    prompt = f"""Generate {num_questions} scenario based multiple-choice questions (MCQs) which also contains designations related to data science on the topic of "{topic}".
+    prompt = f"""Generate {num_questions} scenario based multiple-choice questions (MCQs) which also contains designations related to Devops,AWS on the topic of "{topic}".
     Each question should have 4 options (a, b, c, d) and the correct answer should be clearly marked.
 
     Format:
