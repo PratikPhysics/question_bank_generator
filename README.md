@@ -1,4 +1,5 @@
 # Question_bank_generator
+link : https://questionbankgenerator-cloudblitz.streamlit.app/
 
 This Streamlit app is a simple yet powerful tool for generating multiple-choice questions (MCQs) using Google's Gemini AI. Here's a quick overview:
 
