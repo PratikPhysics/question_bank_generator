@@ -8,6 +8,7 @@ def generate_mcqs(topic, num_questions, course):
     model = genai.GenerativeModel('gemini-2.0-flash')
     if course == "Data Science and AI":
         prompt = f"""Generate {num_questions} scenario based multiple-choice questions (MCQs) which also contains designations related to Data Science and AI on the topic of "{topic}".
+        Each question should have fundamental interrogative such as 'what','why' and 'how' making the question thought provoking,
         Each question should have 4 options (a, b, c, d) and the correct answer should be clearly marked.
 
         Format:
@@ -22,6 +23,7 @@ def generate_mcqs(topic, num_questions, course):
         """
     elif course == "AWS, DevOps":
         prompt = f"""Generate {num_questions} scenario based multiple-choice questions (MCQs) which also contains designations related to Devops,AWS on the topic of "{topic}".
+        Each question should have fundamental interrogative such as 'what','why' and 'how' making the question thought provoking,
         Each question should have 4 options (a, b, c, d) and the correct answer should be clearly marked.
 
         Format:
@@ -36,6 +38,7 @@ def generate_mcqs(topic, num_questions, course):
         """
     elif course == "FullStack Development":
         prompt = f"""Generate {num_questions} scenario based multiple-choice questions (MCQs) which also contains designations related to FullStack Development on the topic of "{topic}".
+        Each question should have fundamental interrogative such as 'what','why' and 'how' making the question thought provoking,
         Each question should have 4 options (a, b, c, d) and the correct answer should be clearly marked.
 
         Format:
@@ -50,6 +53,7 @@ def generate_mcqs(topic, num_questions, course):
         """
     else:
         prompt = f"""Generate {num_questions} scenario based multiple-choice questions (MCQs) on the topic of "{topic}".
+        Each question should have fundamental interrogative such as 'what','why' and 'how' making the question thought provoking,
         Each question should have 4 options (a, b, c, d) and the correct answer should be clearly marked.
 
         Format:
@@ -71,7 +75,7 @@ def generate_mcqs(topic, num_questions, course):
 
 def main():
     st.image('logo.webp')
-    st.title("MCQ Generator with Gemini 😎❤️")
+    st.title("MCQ Generator with Cloudblitz 😎❤️")
 
     course = st.radio("Select Course:", ("Data Science and AI", "AWS, DevOps", "FullStack Development", "General"))
 
@@ -88,7 +92,7 @@ def main():
 
 with st.sidebar:
     st.write('Just create MCQs and eat well!')
-    st.image('cutie-cat.gif')
+    #st.image('cutie-cat.gif')
     st.write('My LinkedIn : www.linkedin.com/in/pratik-ramteke-21573317a')
     st.write('My GitHub : https://github.com/PratikPhysics')
     st.write('Just call me : +91 7588399515')
