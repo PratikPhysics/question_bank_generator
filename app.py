@@ -75,7 +75,7 @@ def generate_mcqs(topic, num_questions, course):
 
 def main():
     st.image('logo.webp')
-    st.title("MCQ Generator with Cloudblitz 😎❤️")
+    st.title("MCQ Generator with Chingi 😎❤️")
 
     course = st.radio("Select Course:", ("Data Science and AI", "AWS, DevOps", "FullStack Development", "General"))
 
